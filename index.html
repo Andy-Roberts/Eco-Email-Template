@@ -13,25 +13,53 @@
           width:200px;
       }
       
-      .s2{
+      .follow{
+          font-weight: bold;
+      }
+      
+      .s2, .section3{
           display: inline-block;
           width:200px;
           list-style-type: none;
-          padding-right: 20px;
           margin: 0 auto;
-          
       }
       
-      section2{
-          text-align: center;
+      .s4{
+          display: inline-block;
+          list-style-type: none;
+          margin: 0 auto;
+      }
+      
+      .s4 p{
+          font-weight: bold;
+      }
+      
+      .social {
+       text-align: center; 
+        border: black 1px solid;
+      }
+      
+      .thumbs{
+          padding: 15px;
       }
       
       
+      .s4 div {
+          width:100px;
+          margin-right: 25px;
+      }
       
-      
-      
-      
-      .text-center{
+      .s2{
+          padding-right:25px;
+          margin-left: 10%;
+      }
+
+    
+      .delivery{
+          width:50px;
+      }
+    
+      .text-center, .derp {
           text-align: center;
       }
       
@@ -42,6 +70,8 @@
           text-align: center;
           width: 40px;
           min-width: 200px;
+          padding: 10px;
+          font-weight: bold;
       }
       
       body{
@@ -113,19 +143,18 @@
 		.section3 img{
 			max-width:150px;
 		}
-		.social{
-			padding-bottom:10px;
-			border:1px black solid;
-			font-weight:bold;
-		}
-		.delivery{
-			max-height:75px;
-		}
+		
 		#footerContent,#utilityBar{
 			text-align:center;
 			font-size:12px;
 		}
-</style></head>
+      #first-button{
+          width:100%;
+      }
+   
+</style>
+    </head>
+    
   <body>
     
     <div id="content-area">
@@ -140,7 +169,6 @@
           <a href="http://www.e-naturalproducts.co.uk/search.php?search_query="> Search for a product </a> </div>
           
         </div>
-        
         
         
         <!-- NAV BAR -->
@@ -171,35 +199,19 @@
         <div class="content" mc:edit="toptext">
           <h1>Put main deal here</h1>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-          
+            <button id="first-button"> Put call to action here</button>
+            
         </div>
         
-        
-        
-        <div class="content" mc:edit="buttoni">
-         <button> Put call to action here</button> 
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       
         
         <!--SECOND DEAL-->
             
-         
         <div class="content">
           <h2 mc:edit="secondheading">Second heading</h2>
         </div>
             
-        
-        <div id="seciton2" class="content">
+        <div id="section2" class="content">
         
         <ul>
         <li class="s2"><div>
@@ -210,13 +222,7 @@
               <p mc:edit="deal1body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             <button> Put call to action here</button></div></li>
             
-            
-            
-            
-            
-            
-            
-            
+                        
             
             <li class="s2"><div><h2 mc:edit="deal2head">Deal2</h2>
                 <p mc:edit="deal2body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -227,63 +233,61 @@
             
         </div>
        
-            
-            
-        
-        
-            
-            
-            
             <div class="content">
               <h2>Third heading</h2>
             </div>
             
+        
             <!-- PICKED PRODUCTS SECTION -->
             
             <div class="content container">
-              <div class="row mx-auto">
-                <div class="col text-center section3">
+             
+                  <ul id="s3">
+                <div class=" text-center section3">
                   <img mc:edit="" src="https://imageshack.com/i/pmrb4JFWj" alt="pmrb4JFWj">
                   <h3 mc:edit="pro1head">Product title</h3>
                   <h4 mc:edit="pro1price">£19.99</h4>
                   <p mc:edit="button1"><button> Put call to action here</button></p> </div>
                   
-                  <div class="col text-center section3">
+                  <li class=" text-center section3">
                     <img mc:edit="" src="http://imageshack.com/a/img921/2735/1XaUGU.jpg" alt="1XaUGU.jpg">
                     <h3 mc:edit="pro2head">Product title</h3>
                     <h4 mc:edit="pro2price">£19.99</h4>
                     <p mc:edit="button2"><button> Put call to action here</button></p>
-                  </div>
+                  </li>
                   
-                  <div class="col text-center section3">
+                  <li class=" text-center section3">
                     <img mc:edit="" src="http://cdn6.bigcommerce.com/s-9kc66/product_images/d/body%20masks%20and%20wraps%20300x300__72958.jpg" alt="body%20masks%20and%20wraps%20300x300__72958.jpg">
                     <h3 mc:edit="pro3head">Product title</h3>
                     <h4 mc:edit="pro3price">£19.99</h4>
                     <p mc:edit="button3"><button> Put call to action here</button></p>
-                  </div>
-                </div>
-                <div class="row mx-auto">
-                  <div class="col text-center section3">
+                  </li>
+                
+                  <li class=" text-center section3">
                     <img mc:edit="" src="http://cdn6.bigcommerce.com/s-9kc66/product_images/x/natural%20oils%20300x300__30704.jpg" alt="natural%20oils%20300x300__30704.jpg">
                     <h3 mc:edit="pro4head">Product title</h3>
                     <h4 mc:edit="pro4price">£19.99</h4>
                     <p mc:edit="button4"><button> Put call to action here</button></p>
-                  </div>
+                  </li>
                   
-                  <div class="col text-center section3">
+                  <li class=" text-center section3">
                     <img mc:edit="" src="http://cdn6.bigcommerce.com/s-9kc66/products/2040/images/4825/c00c2a7e-1dca-4c10-9edd-7e2b3e931a41__08835.1499968436.152.152.jpg?c=2" alt="c00c2a7e-1dca-4c10-9edd-7e2b3e931a41__08835.1499968436.152.152.jpg?c=2">
                     <h3 mc:edit="pro5head">Product title</h3>
                     <h4 mc:edit="pro5price">£19.99</h4>
                     <p mc:edit="button5"><button> Put call to action here</button></p>
-                  </div>
+                  </li>
                   
-                  <div class="col text-center section3">
+                  <li class=" text-center section3">
                     <img mc:edit="" src="http://cdn6.bigcommerce.com/s-9kc66/product_images/g/s_anti%20wrinkle__63688.jpg" alt="s_anti%20wrinkle__63688.jpg">
                     <h3 mc:edit="pro6head">Product title</h3>
                     <h4 mc:edit="pro6price">£19.99</h4>
                     <p mc:edit="button6"><button> Put call to action here</button></p>
-                  </div>
-                </div>
+                  </li>
+                      
+                    </ul>
+                    
+                    
+
               </div>
               
               
@@ -293,47 +297,48 @@
               <div class="content">
                 <div class="content container">
                   <div class="social">
-                    <div class="row mx-auto">
-                      <div class="col text-center section3">
+                    <ul class="">
+                      <li class=" text-center s4">
+                          <div>
                         <p>Free UK delivery on order over £50</p>
                         <img class="delivery" src="https://gallery.mailchimp.com/a29d49b7e4bac95b8fce66469/images/01ac7521-adfd-4b04-86c4-8b250e0d6103.jpg" alt="01ac7521-adfd-4b04-86c4-8b250e0d6103.jpg">
-                      </div>
+                          </div>
+                              
+                              </li>
                       
-                      <div class="col text-center section3">
+                      <li class=" text-center s4">
+                          <div>
                         <p>Super fast 24HR dispatch</p>
                         <img class="delivery" src="https://gallery.mailchimp.com/a29d49b7e4bac95b8fce66469/images/da10f63f-02ce-49e5-af4a-6ce70d2dc92a.jpg" alt="da10f63f-02ce-49e5-af4a-6ce70d2dc92a.jpg">
-                      </div>
+                          </div>
+                              </li>
                       
-                      <div class="col text-center section3">
-                        <p>Express Delivery upgrade from £4.50</p>
+                      <li class=" text-center s4">
+                        <div>
+                          <p>Express Delivery upgrade from £4.50</p>
                         <img class="delivery" src="https://gallery.mailchimp.com/a29d49b7e4bac95b8fce66469/images/bf068f14-d03f-44dc-97de-608fc05fff27.jpg" alt="bf068f14-d03f-44dc-97de-608fc05fff27.jpg">
-                      </div>
-                    </div>
+                          </div>
+                            </li>
+                      </ul>
                   </div>
                 </div>
               </div>
               
-              
-              
               <div class="content">
                 <div class="content container">
                   <div class="social">
-                    <div class="row mx-auto">
-                      <div class="col text-center section3">
-                        <a href="https://www.facebook.com/econaturalproducts"><img class="delivery" src="https://lh3.googleusercontent.com/ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w170" alt="ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w170"></a> </div>
-                        
-                        <div class="col text-center section3">
+                        <a href="https://www.facebook.com/econaturalproducts"><img class="delivery thumbs" src="https://lh3.googleusercontent.com/ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w170" alt="ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w170"></a>
+                          <a href="https://twitter.com/econaturalpro"><img class="delivery thumbs" src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png" alt="Twitter-Download-PNG.png"></a>
+                      </div>
+                    
+                        <div class="text-center follow">
                           <p>Be Sure to follow us for news and updates.</p>
                         </div>
-                        
-                        <div class="col text-center section3">
-                          <a href="https://twitter.com/econaturalpro"><img class="delivery" src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png" alt="Twitter-Download-PNG.png"></a> </div>
-                        </div>
-                      </div>
+                    
                     </div>
                   </div>
                   
-                  <!-- BEGIN FOOTER // -->
+                  <!-- FOOTER // -->
                   
                   <div class="content">
                     
